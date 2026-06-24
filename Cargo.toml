@@ -1,0 +1,25 @@
+[package]
+name = "jsesc"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Escape a string for safe embedding in JavaScript or JSON source. A faithful port of the jsesc npm package's string escaping. Zero deps, no_std."
+documentation = "https://docs.rs/jsesc"
+repository = "https://github.com/trananhtung/jsesc"
+homepage = "https://github.com/trananhtung/jsesc"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["escape", "javascript", "json", "string", "unicode"]
+categories = ["text-processing", "encoding", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
